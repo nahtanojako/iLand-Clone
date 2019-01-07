@@ -1,0 +1,36 @@
+#clients, #subscribe
+  .clients-wrap, .subscribe-wrap
+    .mail-list
+      margin: 0 auto 10px 0
+
+      input
+        padding: 0.8rem 1rem
+
+      [type="text"]
+        width: 60%
+        border: none
+
+      [type="submit"]
+        width: 39%
+        margin-left: -5px
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+        background: $primary
+        outline: none
+        border: none
+        cursor: pointer
+        color: $white
+        &:hover
+          background: darken($primary, 10%)
+
+    .clients-item
+      background: $primary
+      padding: 1rem
+      margin-left: -1rem
+      margin-right: -1rem
+      display: flex
+      justify-content: space-between
+      overflow: hidden
+
+      img
+        width: 30%

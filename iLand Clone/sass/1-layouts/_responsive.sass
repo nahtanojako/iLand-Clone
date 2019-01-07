@@ -1,0 +1,77 @@
+@media (min-width: 768px)
+  .container
+    max-width: 760px
+
+  .showcase-wrap
+    img
+      display: block
+      margin: auto
+  
+  .header-wrap
+
+    .toggler
+      display: none
+
+    .nav-desktop
+      opacity: 1 !important
+      position: static !important
+      width: auto !important
+      background: transparent !important
+      box-shadow: none !important
+
+      ul
+        display: flex
+
+
+@media (min-width: 992px)
+  .container
+    max-width: 990px
+
+  .showcase-wrap, 
+  .features-wrap, 
+  .features-2-wrap,
+  .more-features-wrap,
+  .review-wrap,
+  .pricing-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .features-wrap
+    .features-item
+      padding: 0 1rem
+
+  .features-2-wrap
+    .features-2-txt
+      padding: 0 3rem
+      .section-head
+        text-align: left
+        margin-bottom: 2rem
+
+  .review-wrap
+    .review-item
+      margin-bottom: 0 !important
+      padding: 0 1rem !important
+      border-bottom: 0 !important
+
+  .pricing-wrap 
+    margin-top: 3rem !important
+    .pricing-item
+      margin: 0 1rem 0 1rem !important
+      padding: 2rem 1.5rem !important
+
+      &:first-child
+      margin-top: 0 !important
+
+  .subscribe-wrap
+    max-width: 768px
+    margin: auto
+
+  .mail-list
+    max-width: 500px
+    margin: auto !important
+
+  .clients-item
+    margin-top: 3rem
+    padding-left: 10rem !important
+    padding-right: 10rem !important

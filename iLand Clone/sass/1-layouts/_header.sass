@@ -1,0 +1,65 @@
+header
+  background: $off-white
+  padding: 1rem 0
+  transition: all .5s ease-out
+
+  &.headerScroll
+    background: $white
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 0.5rem 0
+    box-shadow: 0 6px 7px rgba(0,0,0,0.2)
+    & #showcase
+      margin-top: 3rem
+      
+  .header-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+
+    .toggler
+      width: 32px
+      height: 25px
+      cursor: pointer
+      margin-top: 6px
+      // border: 1px solid $off-black
+
+      .top, .mid, .bot
+        height: 3px
+        background: $off-black
+        margin-bottom: 7px
+
+    .nav-desktop
+      box-shadow: 0 3px 5px rgba(0,0,0,0.3)
+      position: absolute
+      top: 47px
+      left: 0
+      background: $white
+      width: 100%
+      opacity: 0
+      transition: .5s ease
+
+      &.toggle
+        opacity: 1
+
+      
+      ul 
+        li
+          a
+            padding: 0.8rem 1rem
+            display: block
+            text-align: center
+            text-transform: uppercase
+            color: $off-black
+            transition: .3s ease-in
+            &:hover
+              color: $white
+              background: $primary
+              border-radius: 5px
+
+.header-active
+  background: $white
+  box-shadow: $shadow-2

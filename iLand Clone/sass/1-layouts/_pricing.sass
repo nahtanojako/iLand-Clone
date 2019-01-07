@@ -1,0 +1,76 @@
+#pricing
+  text-align: center
+  background: $white
+  p
+    color: $off-black
+    margin: 1rem 0
+
+  .pricing-wrap
+    margin: 0 1rem
+    .pricing-item
+      margin-bottom: 5rem
+      box-shadow: 0 0 30px rgba(0,0,0,.1)
+      padding: 4rem
+      transition: .5s ease-out
+      &:hover
+        box-shadow: 0 0 30px rgba(0,0,0,.5)
+      &:first-child
+        margin-top: 5rem
+      &:hover .icon:nth-child(1)
+        background: $primary
+
+      &:hover .icon-popular
+        background: #0066ff !important
+
+      &:hover .icon-premium
+        background: #909 !important
+
+      .icon
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        border: 1px solid $primary
+        margin: 0 auto 2rem auto
+        transition: .5s ease-out
+      
+      .icon-popular
+        border-color: #0066ff
+      
+      .icon-premium
+        border-color: #909
+      
+      .plan
+        font-weight: bold
+        font-size: 1.3rem
+
+      .stat
+        font-size: 3rem
+        text-transform: uppercase
+        color: $primary
+        font-weight: bold
+
+      .popular
+        color: #0066ff
+      .popular-bg
+        background: #0066ff
+        border: 1px solid #0066ff
+        &:hover
+          background: transparent
+          color: #0066ff
+
+      .premium
+        color: #909
+      .premium-bg
+        background: #909
+        border: 1px solid #909
+        &:hover
+          background: transparent
+          color: #909
+
+
+      .desc
+        color: lighten($off-black, 20%)
+      
+
+      a:hover
+        color: $primary
